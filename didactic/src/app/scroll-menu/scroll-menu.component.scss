@@ -1,0 +1,12 @@
+.info-widget {
+    width: 27.75%;
+    display: inline-block;
+  }
+
+  .middle {
+    float: left;
+    width: 30%;
+    overflow: auto;
+    /*will change this to hidden later to deny scolling to user*/
+    white-space: nowrap;
+  }
