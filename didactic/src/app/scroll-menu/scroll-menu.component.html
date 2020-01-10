@@ -1,18 +1,18 @@
 <div class="container">
-    <div style="float: left">
-        <button (click)="scrollLeft()">left</button>
-    </div>
+    <i 
+        class="material-icons left-arrow" 
+        (click)="scrollLeft()">keyboard_arrow_left
+    </i>
 
     <div #widgetsContent class="middle">
-        <div class="info-widget">WIDGET</div>
-        <div class="info-widget">WIDGET</div>
-        <div class="info-widget">WIDGET</div>
-        <div class="info-widget">WIDGET</div>
-        <div class="info-widget">WIDGET</div>
-        <div class="info-widget">WIDGET</div>
+        <div 
+            class="info-widget" 
+            *ngFor="let middleTitle of middleTitles">{{ middleTitle }}
+        </div>
     </div>
 
-    <div>
-        <button (click)="scrollRight()">right</button>
-    </div>
+    <i 
+        class="material-icons right-arrow"
+        (click)="scrollRight()">keyboard_arrow_right
+    </i>
 </div>

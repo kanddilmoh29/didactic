@@ -1,12 +1,37 @@
-.info-widget {
-    width: 27.75%;
-    display: inline-block;
-  }
 
-  .middle {
-    float: left;
-    width: 30%;
+.middle {
     overflow: auto;
-    /*will change this to hidden later to deny scolling to user*/
     white-space: nowrap;
-  }
+    width: 51%;
+    position: relative;
+    top: 8px;
+    left: 251px;
+    overflow: hidden;
+}
+
+.info-widget {
+    cursor: pointer;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    color: #c7c2c2;
+    &:hover {
+        color: #777;
+    }
+}
+
+.left-arrow {
+    cursor: pointer;
+    position: relative;
+    top: 48px;
+    left: 229px;
+}
+
+.right-arrow {
+    cursor: pointer;
+    position: relative;
+    top: -26px;
+    left: 820px;
+}

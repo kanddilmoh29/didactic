@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'lore-scroll-menu',
@@ -9,7 +9,31 @@ export class ScrollMenuComponent implements OnInit {
 
   constructor() { }
 
+  middleTitles = [
+      'React'
+    , 'Javascript'
+    , 'Angular'
+    , 'Typescript'
+    , 'TSLint'
+    , 'RxJs'
+    , 'Reduce'
+    , 'Wedget'
+    , 'Wedget'
+    , 'Wedget'
+    , 'Wedget'
+  ];
+
+  @ViewChild('widgetsContent', { read: ElementRef, static: false }) public widgetsContent: ElementRef<any>;
+
   ngOnInit() {
+  }
+
+  public scrollRight(): void {
+    this.widgetsContent.nativeElement.scrollTo({ left: (this.widgetsContent.nativeElement.scrollLeft + 150), behavior: 'smooth' });
+  }
+
+  public scrollLeft(): void {
+    this.widgetsContent.nativeElement.scrollTo({ left: (this.widgetsContent.nativeElement.scrollLeft - 150), behavior: 'smooth' });
   }
 
 }
