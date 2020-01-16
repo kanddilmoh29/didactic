@@ -1,3 +1,5 @@
+import { CardComponent } from './card/card.component';
+import { CardModule } from './card/card.module';
 import { SharedModule } from './shared.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -16,7 +18,8 @@ import { ScrollMenuComponent } from './scroll-menu/scroll-menu.component';
     AppComponent,
     HomeComponent,
     NavigationComponent,
-    ScrollMenuComponent
+    ScrollMenuComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
