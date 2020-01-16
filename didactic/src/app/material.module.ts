@@ -1,13 +1,20 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MatButtonModule, MatAutocompleteModule, MatFormFieldModule, MatInputModule } from '@angular/material';
+import {
+  MatButtonModule,
+  MatFormFieldModule,
+  MatInputModule,
+  MatCardModule,
+  MatAutocompleteModule
+} from '@angular/material';
 
 
 const modules: any[] = [
-  MatButtonModule,
-  MatAutocompleteModule,
-  MatFormFieldModule,
-  MatInputModule
+    MatButtonModule
+  , MatAutocompleteModule
+  , MatFormFieldModule
+  , MatInputModule
+  , MatCardModule
 
 ];
 

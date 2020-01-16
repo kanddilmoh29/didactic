@@ -10,7 +10,14 @@ import { RxjsComponent } from './rxjs/rxjs.component';
 
 
 @NgModule({
-  declarations: [AngularComponent, ReactComponent, TslintComponent, JavascriptComponent, TypescriptComponent, RxjsComponent],
+  declarations: [
+    AngularComponent,
+    ReactComponent,
+    TslintComponent,
+    JavascriptComponent,
+    TypescriptComponent,
+    RxjsComponent
+  ],
   imports: [
     CommonModule
   ]

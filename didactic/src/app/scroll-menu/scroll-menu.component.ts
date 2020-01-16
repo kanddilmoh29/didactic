@@ -17,10 +17,11 @@ export class ScrollMenuComponent implements OnInit {
     , 'TSLint'
     , 'RxJs'
     , 'Reduce'
+    , 'Accessebility'
     , 'Wedget'
     , 'Wedget'
     , 'Wedget'
-    , 'Wedget'
+    , 'Material'
   ];
 
   @ViewChild('widgetsContent', { read: ElementRef, static: false }) public widgetsContent: ElementRef<any>;
